@@ -13,19 +13,23 @@
 
 <div class="accordeon" x-data="{ open: 1}">
   <section>
-    <button @click="open = 1">Bouton 1</button>    
-     
-    <p x-show="open === 1" x-transition.scale.origin.top>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore repellendus architecto autem harum atque, itaque, debitis neque molestiae id quas qui officiis porro et asperiores totam impedit sed earum.</p>
+    <button @click="open = 1">Bouton 1</button>
+    <p x-show="open === 1" x-transition.scale.origin.top>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore repellendus architecto autem harum atque, itaque, debitis neque molestiae id quas qui officiis porro et asperiores totam impedit sed earum.</p>
   </section>
+
   <section>
     <button @click="open = 2">Bouton 2</button>
-    <p x-show="open === 2" x-transition.scale.origin.top>Ab asperiores iste molestiae et cum excepturi culpa sequi pariatur eius nostrum! Ex deserunt temporibus autem commodi nemo iusto, nihil ut facilis assumenda fuga, aperiam voluptate, eveniet cupiditate iste obcaecati!</p>
+    <p x-show="open === 2" x-transition.scale.origin.top>
+      Ab asperiores iste molestiae et cum excepturi culpa sequi pariatur eius nostrum! Ex deserunt temporibus autem commodi nemo iusto, nihil ut facilis assumenda fuga, aperiam voluptate, eveniet cupiditate iste obcaecati!</p>
   </section>
+
   <section>
     <button @click="open = 3">Bouton 3</button>
     <p x-show="open === 3" x-transition.scale.origin.top>
     Quae atque corrupti repellat aspernatur? Dicta nemo molestiae quidem vel quo eaque mollitia nesciunt magnam ullam a, quasi nam necessitatibus, in officia aspernatur temporibus aliquid adipisci nobis nostrum! Quod, quisquam.</p>
   </section>
+
 </div>
   </body>
 </html>
