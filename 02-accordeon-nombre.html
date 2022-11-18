@@ -5,23 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
     
 
-<div class="accordeon">
+<div class="accordeon" x-data="{ open: 1}">
   <section>
-    <button>bouton 1</button>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore repellendus architecto autem harum atque, itaque, debitis neque molestiae id quas qui officiis porro et asperiores totam impedit sed earum.</p>
+    <button @click="open = 1">Bouton 1</button>    
+     
+    <p x-show="open === 1" x-transition.scale.origin.top>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore repellendus architecto autem harum atque, itaque, debitis neque molestiae id quas qui officiis porro et asperiores totam impedit sed earum.</p>
   </section>
   <section>
-    <button>bouton 2</button>
-    <p>Ab asperiores iste molestiae et cum excepturi culpa sequi pariatur eius nostrum! Ex deserunt temporibus autem commodi nemo iusto, nihil ut facilis assumenda fuga, aperiam voluptate, eveniet cupiditate iste obcaecati!</p>
+    <button @click="open = 2">Bouton 2</button>
+    <p x-show="open === 2" x-transition.scale.origin.top>Ab asperiores iste molestiae et cum excepturi culpa sequi pariatur eius nostrum! Ex deserunt temporibus autem commodi nemo iusto, nihil ut facilis assumenda fuga, aperiam voluptate, eveniet cupiditate iste obcaecati!</p>
   </section>
   <section>
-    <button>bouton 3</button>
-    <p>Quae atque corrupti repellat aspernatur? Dicta nemo molestiae quidem vel quo eaque mollitia nesciunt magnam ullam a, quasi nam necessitatibus, in officia aspernatur temporibus aliquid adipisci nobis nostrum! Quod, quisquam.</p>
+    <button @click="open = 3">Bouton 3</button>
+    <p x-show="open === 3" x-transition.scale.origin.top>
+    Quae atque corrupti repellat aspernatur? Dicta nemo molestiae quidem vel quo eaque mollitia nesciunt magnam ullam a, quasi nam necessitatibus, in officia aspernatur temporibus aliquid adipisci nobis nostrum! Quod, quisquam.</p>
   </section>
 </div>
   </body>
